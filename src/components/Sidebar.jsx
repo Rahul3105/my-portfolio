@@ -1,12 +1,12 @@
-// #333
+import { white1 , black1} from '../utils/color';
 import styled from 'styled-components'
 const Sidebar = ({isSidebarOpen}) => {
     return (
         <StyledSidebar isSidebarOpen = {isSidebarOpen}>
             <ul>
-                <li><a href="#"> HOME</a></li>
-                <li><a href="#"> ABOUT</a></li>
-                <li><a href="#"> SKILLS</a></li>
+                <li><a href="#home"> HOME</a></li>
+                <li><a href="#about"> ABOUT</a></li>
+                <li><a href="#skills"> SKILLS</a></li>
                 <li><a href="#"> PROJECT</a></li>
                 <li><a href="#"> CONTACT</a></li>
             </ul>
@@ -15,6 +15,7 @@ const Sidebar = ({isSidebarOpen}) => {
 }
 const StyledSidebar = styled.div`
     position:fixed;
+    background-color:${white1};
     width: ${({isSidebarOpen}) => isSidebarOpen ? "300px" : "0px"};
     height:100%;
     border-right:1px solid gainsboro;
@@ -34,7 +35,7 @@ const StyledSidebar = styled.div`
                 letter-spacing:2px;
                 font-weight:600;
                 opacity:0.5;
-                color:#333;
+                color:${black1};
             }
             a:hover {
                 opacity:1;

@@ -1,10 +1,14 @@
 import Topbar from './Topbar';
 import styled from "styled-components";
 import Home from './Home';
+import About from './About';
+import Skills from './Skills'
 const Main = ({ toggleSidebar, isSidebarOpen }) => {
     return <StyledMain isSidebarOpen={ isSidebarOpen }>
         <Topbar toggleSidebar={ toggleSidebar}></Topbar>
-        <Home/> 
+        <Home /> 
+        <About />
+        <Skills/>
     </StyledMain>
 
 }
