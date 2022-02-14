@@ -66,7 +66,8 @@ const StyledHome = styled.div`
             transition: 0.5s;
             a {
                 text-decoration: none;
-                color:${black1};
+                /* color:${black1}; */
+                color:rgb(108,99,255);
                 font-size: 22px;
             }
         }

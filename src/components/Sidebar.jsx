@@ -6,6 +6,7 @@ const Sidebar = ({isSidebarOpen}) => {
             <ul>
                 <li><a href="#home"> HOME</a></li>
                 <li><a href="#about"> ABOUT</a></li>
+                <li><a href="#myTimeline">TIMELINE</a></li>
                 <li><a href="#skills"> SKILLS</a></li>
                 <li><a href="#"> PROJECT</a></li>
                 <li><a href="#"> CONTACT</a></li>

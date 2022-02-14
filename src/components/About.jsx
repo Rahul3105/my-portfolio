@@ -3,27 +3,40 @@ import SectionTemplate from "./SectionTemplate";
 const About = () => {
   return (
     <SectionTemplate id={"about"} title={"About me"}>
-      <StyledTextCont>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut delectus,
-          consequuntur minima nemo alias porro odit nostrum, unde, maxime iusto
-          magni eligendi molestiae perspiciatis obcaecati tempore ea? Expedita
-          similique maiores provident! Optio magni necessitatibus, <br /> <br />
-          officiis aliquam et in possimus corrupti autem ut molestias cumque
-          eaque ipsam pariatur eligendi iste quia?
-        </p>
-      </StyledTextCont>
-      <div className="imgCont">
-        <img src="/rahul.png" alt="" />
-      </div>
+      <StyledAbout>
+        <div className="textCont">
+          <p>
+            Hi My name is Rahul Rajput. A Full Stack Web Developer, Passionate
+            about Information Technology. Excited to make the virtual world
+            beautiful, efficient, and tempting. Proactive and fast learner,
+            having excellent communication and teamwork skills. Eager to make a
+            contribution to the industry using my Skillset, Toolset, and
+            Mindset.
+            <br />
+            <br />
+            <br />I have been passionate about new technologies since childhood.
+            I always wanted to be in tech industry, but due to lack of guidance
+            I chose Mechanical Engineering. Masai school gave me that second
+            chance to fulfil my dreams. At masai I learnt MERN Stack, Data
+            Structure and Algorithm along with Soft Skills.
+          </p>
+        </div>
+        <div className="imgCont">
+          <img src="/dev_svg.svg" alt="" />
+        </div>
+      </StyledAbout>
     </SectionTemplate>
   );
 };
 
-const StyledTextCont = styled.div`
-  width: 55%;
-  & + .imgCont {
-    width: 30%;
+const StyledAbout = styled.div`
+  display:flex;
+  justify-content:space-between;
+  & > .textCont {
+    width: 55%;
+  }
+  & > .imgCont {
+    width: 40%;
     img {
       width: 100%;
     }

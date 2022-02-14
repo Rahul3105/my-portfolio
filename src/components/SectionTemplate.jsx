@@ -38,6 +38,6 @@ const StyledSectionTemplate = styled.div`
   }
   & > .content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 `;
